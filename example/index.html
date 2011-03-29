@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+	<title>Willkommen bei Jay's</title>
+	<style type="text/css">
+
+#index_gesamtes_Fenster {
+	border-left:1px solid #FFF;
+	border-right:1px solid #FFFFFF;
+	margin:0 auto;
+	/*margin:0px;*/
+	/*min-height:100%;*/
+	padding:0;
+	width:250px;
+}
+
+#index_benutzter_Bereich {
+	border-left:1px solid #FFFFFF;
+	border-right:1px solid #FFFFFF;
+	/*margin:0 auto;*/
+	margin:0px;
+	min-height:100%;
+	padding:0;
+	position:absolute;
+	width:190px;
+}
+
+#followDiv {
+	top:6px;
+/*	position:absolute; */
+	z-index:4;
+	width:190px;
+	height:46px;
+	/*background:url(../images/Balken.gif);*/
+	background:#00ff00;
+	display:none;
+}
+
+#blue_menu {
+	background:#00f none repeat scroll 0 0;
+	min-height:756px; 	
+	height:100%;
+	top:1px;
+	width:190px;
+	position:absolute;
+	z-index:1;
+	padding:0 0 0 0px;
+	margin: 0px;
+	display:block;
+}
+#blue_menu_inner{
+	position:relative;
+	z-index:6;
+}
+#blue_menu ul {
+	margin: 0px;
+	padding: 250px 0px 0px 0px;
+	display:block; 
+	list-style-type: none; 
+	list-style-image: none; 
+	list-style-position: outside;
+/*	background:#00386A;
+ * 
+ */
+}
+#blue_menu ul li {
+	top:200px;
+	height:60px;
+	width:190px;
+	margin:0px;
+	padding:0px; 
+	list-style-type: none; 
+	list-style-image: none; 
+	list-style-position: outside;
+}
+#blue_menu ul li a{
+/*	position:absolute; */
+	margin: 0px;
+	padding: 20px 0px 20px 0px;
+	display:block;
+	font-size: 20px; /*20 font + 20 oben + 20 unten = 60 insgesamt*/
+	text-align:center;
+	text-decoration:none;
+	width:190px;
+	z-index:6;
+	color:#fff;
+}
+#blue_menu ul li a:hover {
+	color:#000;
+}
+
+	</style>
+
+	<script type="text/javascript" src="../slider.js" ></script>
+	<script type="text/javascript" >
+	function init(){
+		initialisiereSlider();
+	}
+	</script>
+
+</head>
+<body onload="init()">
+<div id="index_gesamtes_Fenster">
+		<div id="index_benutzter_Bereich">
+				<div id="blue_menu">
+						<ul id="blue_menu_list">
+							
+							<li >	<a href="http://example.com" > Link1 </a> </li>
+							<li > <a href="http://example.com" > Link2 </a> </li>
+							<li > <a href="http://example.com" > Link3 </a>	</li>
+							<li > <a href="http://example.com" > Link4 </a>	</li>
+							<li > <a href="http://example.com" > Link5 </a>	</li>
+							<li > <a href="http://example.com" > Link6 </a>	</li>
+							
+						</ul>
+
+						<div id="followDiv">
+
+						</div>
+			</div>
+	</div>
+</div>
+</body>
